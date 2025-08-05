@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Carter | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+ <!--app.jss -->
+  <script src="./app.js"></script>
+  <!--style.css file link-->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+  <!-- Navigation -->
+  <header class="fixed w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">
+          <span class="gradient-text">Daniyal Khan</span>
+        </a>
+        <!--# WITH HOME,WORK,ABOUT ETC-->
+        <nav class="hidden md:flex space-x-8">
+          <a href="#home" class="font-medium hover:text-primary-light dark:hover:text-primary-dark transition">Home</a>
+          <a href="#work" class="font-medium hover:text-primary-light dark:hover:text-primary-dark transition">Work</a>
+          <a href="#about" class="font-medium hover:text-primary-light dark:hover:text-primary-dark transition">About</a>
+          <a href="#skills" class="font-medium hover:text-primary-light dark:hover:text-primary-dark transition">Skills</a>
+          <a href="#contact" class="font-medium hover:text-primary-light dark:hover:text-primary-dark transition">Contact</a>
+        </nav>
+        
+        <div class="flex items-center space-x-4">
+          <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+            <i class="fas fa-moon dark:hidden"></i>
+            <i class="fas fa-sun hidden dark:block"></i>
+          </button>
+          <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center pt-20">
+    <div class="container mx-auto px-6 py-24">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-12 md:mb-0 animate-fade-in">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            Hi, I'm <span class="gradient-text">Daniyal Khan</span>
+          </h1>
+          <h2 class="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-8">
+            Frontend Web Developer
+          </h2>
+          <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg">
+            I build clean, responsive, and user-friendly websites using HTML, CSS, JavaScript, Tailwind CSS, and Bootstrap. I focus on writing well-structured code and delivering smooth, modern web experiences across all devices.
+            I’m currently expanding my skills by learning React.js to build dynamic and scalable frontend applications. 
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#work" class="px-6 py-3 bg-primary-light dark:bg-primary-dark text-white rounded-lg font-medium hover:opacity-90 transition">
+              View My Work
+            </a>
+            <a href="#contact" class="px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+              Contact Me
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center animate-slide-up">
+          <div class="relative">
+            <div class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-primary-light to-secondary-light dark:from-primary-dark dark:to-secondary-dark rounded-full overflow-hidden shadow-xl">
+              <img src="./photoes/dani.jfif"    alt="Alex Carter" 
+                   class="w-full h-full object-cover">
+            </div>
+            <div class="absolute -bottom-5 -right-5 bg-white dark:bg-gray-800 p-3 rounded-lg shadow-lg">
+              <div class="flex items-center">
+                <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                <span class="text-sm font-medium">Available for work</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work/Projects Section -->
+  <section id="work" class="py-20 bg-gray-50 dark:bg-gray-800">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Projects</span></h2>
+        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Here are some of my recent projects. Each one was carefully crafted to solve specific problems.
+        </p>
+      </div>
+
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- YouTube Clone Project 1 -->
+<div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in">
+  <div class="h-48 overflow-hidden">
+    <img src="./photoes/youtube.jfif" 
+         alt="YouTube Clone Screenshot" 
+         class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+  </div>
+  <div class="p-6">
+    <div class="flex items-center mb-3">
+      <span class="text-xs font-medium px-3 py-1 rounded-full bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-300 mr-3">
+        Frontend
+      </span>
+      <span class="text-xs text-gray-500 dark:text-gray-400">
+        <i class="far fa-clock mr-1"></i> 3 weeks
+      </span>
+    </div>
+    <h3 class="text-xl font-bold mb-2">YouTube UI Clone</h3>
+    <p class="text-gray-600 dark:text-gray-300 mb-4">
+      A responsive YouTube interface clone with video browsing, search functionality, and dark mode toggle.
+    </p>
+    <div class="flex flex-wrap gap-2 mb-4">
+      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">HTML</span>
+      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">CSS</span>
+      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">Grid , Flexbox</span>
+    </div>
+    <div class="flex justify-between">
+      <a href="#" class="text-primary-light dark:text-primary-dark font-medium hover:underline flex items-center">
+        View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
+      </a>
+      <a href="#" class="text-gray-600 dark:text-gray-300 font-medium hover:underline flex items-center">
+        Code <i class="fab fa-github ml-2 text-sm"></i>
+      </a>
+    </div>
+  </div>
+</div>
+     
+
+        <!-- Project 2 -->
+        <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in">
+          <div class="h-48 overflow-hidden">
+            <img src="./photoes/simongame.jpg" alt="Project 1" 
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 mr-3">
+                Web App
+              </span>
+              <span class="text-xs text-gray-500 dark:text-gray-400">
+                <i class="far fa-clock mr-1"></i> 1 months
+              </span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Simon Game</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              A classic memory-based game where the player must repeat a growing sequence of lights and sounds. I built this using HTML, CSS, and JavaScript to practice DOM manipulation and user interaction.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">React</span>
+              <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">Tailwind CSS</span>
+              <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">Node.js</span>
+            </div>
+            <a href="#" class="text-primary-light dark:text-primary-dark font-medium hover:underline flex items-center">
+              View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in">
+          <div class="h-48 overflow-hidden">
+            <img src="./photoes/currency-converter.png" 
+                 alt="Project 2" 
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="text-xs font-medium px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-300 mr-3">
+                Website 
+              </span>
+              <span class="text-xs text-gray-500 dark:text-gray-400">
+                <i class="far fa-clock mr-1"></i> 2 months
+              </span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Currancy Cunverter</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              A simple and interactive web app that allows users to convert between different currencies using real-time exchange rates. 
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">CSS , JS</span>
+              <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">Dom manipulatin</span>
+              <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">Api integeration</span>
+            </div>
+            <a href="#" class="text-primary-light dark:text-primary-dark font-medium hover:underline flex items-center">
+              View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in">
+          <div class="h-48 overflow-hidden">
+            <img src="./photoes/calc.opdownload"  alt="Project 3" 
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="text-xs font-medium px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-300 mr-3">
+                Website
+              </span>
+              <span class="text-xs text-gray-500 dark:text-gray-400">
+                <i class="far fa-clock mr-1"></i> 1 month
+              </span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Calculator</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              A clean and responsive calculator built using HTML, CSS, JavaScript, and Tailwind CSS. It performs basic arithmetic operations with a user-friendly interface and smooth styling.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">HTML/CSS</span>
+              <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">JavaScript</span>
+              <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">Tailwind CSS</span>
+            </div>
+            <a href="#" class="text-primary-light dark:text-primary-dark font-medium hover:underline flex items-center">
+              View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            </a>
+          </div>
+        </div>
+      <!-- Project 5 -->
+<div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in">
+  <div class="h-48 overflow-hidden">
+    <img src="./photoes/Form-Validation.png" alt="Form Validation App" 
+         class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+  </div>
+  <div class="p-6">
+    <div class="flex items-center mb-3">
+      <span class="text-xs font-medium px-3 py-1 rounded-full bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-300 mr-3">
+        Web App
+      </span>
+      <span class="text-xs text-gray-500 dark:text-gray-400">
+        <i class="far fa-clock mr-1"></i> 1 week
+      </span>
+    </div>
+    <h3 class="text-xl font-bold mb-2">Form Validation</h3>
+    <p class="text-gray-600 dark:text-gray-300 mb-4">
+      A responsive form with real-time validation and error handling using HTML, CSS, JavaScript, and Tailwind CSS. It validates user input for fields like email, password, and more with clear feedback and accessibility.
+    </p>
+    <div class="flex flex-wrap gap-2 mb-4">
+      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">HTML</span>
+      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">CSS</span>
+      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">JavaScript</span>
+    </div>
+    <a href="#" class="text-primary-light dark:text-primary-dark font-medium hover:underline flex items-center">
+      View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Project 6 -->
+<div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in">
+  <div class="h-48 overflow-hidden">
+    <img src="./photoes/landing.jfif"      alt="Bootstrap Landing Page" 
+         class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+  </div>
+  <div class="p-6">
+    <div class="flex items-center mb-3">
+      <span class="text-xs font-medium px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-300 mr-3">
+        Website
+      </span>
+      <span class="text-xs text-gray-500 dark:text-gray-400">
+        <i class="far fa-clock mr-1"></i> 3 days
+      </span>
+    </div>
+    <h3 class="text-xl font-bold mb-2">Bootstrap Landing Page</h3>
+    <p class="text-gray-600 dark:text-gray-300 mb-4">
+      A modern and responsive landing page built using Bootstrap. Features include navigation bar, hero section, feature cards, and a call-to-action — all optimized for performance and cross-device compatibility.
+    </p>
+    <div class="flex flex-wrap gap-2 mb-4">
+      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">HTML</span>
+      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">CSS</span>
+      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">Bootstrap</span>
+    </div>
+    <a href="#" class="text-primary-light dark:text-primary-dark font-medium hover:underline flex items-center">
+      View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
+    </a>
+  </div>
+</div>
+<!--grid end /div-->
+</div>
+     
+      <div class="text-center mt-12">
+        <a href="#" class="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+          View All Projects
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-12 md:mb-0 animate-fade-in">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">About <span class="gradient-text">Me</span></h2>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            I'm Daniyal Khan, a fresh graduate in Software Engineering with a CGPA of 3.1. My passion for web development began when I enrolled in university, and since then, I’ve been dedicated to building clean and user-friendly digital experiences.   </p>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            I have hands-on experience with HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and the principles of Object-Oriented Programming (OOP). I'm currently expanding my skills by learning React to build more dynamic and modern frontend applications.
+          </p>
+          <p class="text-gray-600 dark:text-gray-300 mb-8">
+            When I'm not coding, I enjoy watching manga, playing cricket, and exploring new things in tech. I'm always eager to grow, improve, and contribute to meaningful projects.
+          </p>
+          <a href="#" class="px-6 py-3 bg-primary-light dark:bg-primary-dark text-white rounded-lg font-medium hover:opacity-90 transition inline-flex items-center">
+            Download Resume
+            <i class="fas fa-download ml-2"></i>
+          </a>
+        </div>
+        <div class="md:w-1/2 md:pl-12 animate-slide-up">
+          <div class="bg-gray-100 dark:bg-gray-800 p-8 rounded-xl">
+            <h3 class="text-xl font-bold mb-6">My Experience</h3>
+            
+            <div class="space-y-6">
+              <!-- Experience 1 -->
+              <div class="flex">
+                <div class="mr-4">
+                  <div class="w-12 h-12 bg-primary-light/10 dark:bg-primary-dark/10 rounded-full flex items-center justify-center text-primary-light dark:text-primary-dark">
+                    <i class="fas fa-briefcase text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="font-bold">Frontend Development Intern</h4>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-1">Pirsosoft Company • June 15, 2025 – Present</p>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm">
+                    Assisting the development team in building and maintaining responsive web applications using modern frontend technologies. Gaining hands-on experience with real-world projects and improving skills in HTML, CSS, JavaScript, Bootstrap, and Tailwind.    </p>
+                </div>
+              </div>
+              
+              <!-- Experience 2 -->
+              <div class="flex">
+                <div class="mr-4">
+                  <div class="w-12 h-12 bg-primary-light/10 dark:bg-primary-dark/10 rounded-full flex items-center justify-center text-primary-light dark:text-primary-dark">
+                    <i class="fas fa-briefcase text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="font-bold">The Complete Web Development Bootcamp</h4>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-1">Udemy • Completed Online</p>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm">
+                    A comprehensive course covering frontend and backend web technologies including HTML, CSS, JavaScript, Node.js, and more.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Experience 3 -->
+              <div class="flex">
+                <div class="mr-4">
+                  <div class="w-12 h-12 bg-primary-light/10 dark:bg-primary-dark/10 rounded-full flex items-center justify-center text-primary-light dark:text-primary-dark">
+                    <i class="fas fa-graduation-cap text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="font-bold">BS Software Engineering</h4>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-1">University of Science and Technology, Bannu • 2021 – 2025</p>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm">
+                    Focused on core subjects like Object-Oriented Programming, C++ , database ,  Web Development, and Software Design.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-800">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Skills</span></h2>
+        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          I've worked with a variety of technologies in the web development world. Here are my core competencies.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <!-- Skill 1 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow animate-fade-in">
+          <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 dark:bg-blue-900/20 rounded-full flex items-center justify-center text-blue-600 dark:text-blue-400">
+            <i class="fab fa-react text-3xl"></i>
+          </div>
+          <h3 class="font-bold mb-2">HTML</h3>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+            <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        
+        <!-- Skill 2 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow animate-fade-in">
+          <div class="w-16 h-16 mx-auto mb-4 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center text-green-600 dark:text-green-400">
+            <i class="fab fa-vuejs text-3xl"></i>
+          </div>
+          <h3 class="font-bold mb-2">CSS</h3>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+            <div class="bg-green-600 h-2 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+        
+        <!-- Skill 3 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow animate-fade-in">
+          <div class="w-16 h-16 mx-auto mb-4 bg-yellow-100 dark:bg-yellow-900/20 rounded-full flex items-center justify-center text-yellow-600 dark:text-yellow-400">
+            <i class="fab fa-js text-3xl"></i>
+          </div>
+          <h3 class="font-bold mb-2">JavaScript</h3>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+            <div class="bg-yellow-500 h-2 rounded-full" style="width: 95%"></div>
+          </div>
+        </div>
+        
+        <!-- Skill 4 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow animate-fade-in">
+          <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 dark:bg-blue-900/20 rounded-full flex items-center justify-center text-blue-600 dark:text-blue-400">
+            <i class="fab fa-css3-alt text-3xl"></i>
+          </div>
+          <h3 class="font-bold mb-2">Tailwind CSS</h3>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 72%"></div>
+          </div>
+        </div>
+        
+        <!-- Skill 5 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow animate-fade-in">
+          <div class="w-16 h-16 mx-auto mb-4 bg-orange-100 dark:bg-orange-900/20 rounded-full flex items-center justify-center text-orange-600 dark:text-orange-400">
+            <i class="fab fa-figma text-3xl"></i>
+          </div>
+          <h3 class="font-bold mb-2">Bootstrap</h3>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+            <div class="bg-orange-500 h-2 rounded-full" style="width: 92%"></div>
+          </div>
+        </div>
+        
+        <!-- Skill 6 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow animate-fade-in">
+          <div class="w-16 h-16 mx-auto mb-4 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center text-red-600 dark:text-red-400">
+            <i class="fab fa-node-js text-3xl"></i>
+          </div>
+          <h3 class="font-bold mb-2">oop</h3>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+            <div class="bg-red-600 h-2 rounded-full" style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+          </p>
+        </div>
+        
+        <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 md:p-12 animate-fade-in">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Your Name</label>
+                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark focus:border-transparent dark:bg-gray-800">
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email Address</label>
+                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark focus:border-transparent dark:bg-gray-800">
+              </div>
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Subject</label>
+              <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark focus:border-transparent dark:bg-gray-800">
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
+              <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark focus:border-transparent dark:bg-gray-800"></textarea>
+            </div>
+            <button type="submit" class="w-full px-6 py-3 bg-primary-light dark:bg-primary-dark text-white rounded-lg font-medium hover:opacity-90 transition">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <a href="#" class="text-2xl font-bold">
+            <span class="gradient-text">Daniyal Khan</span>
+          </a>
+          <p class="mt-2 text-sm">Creating digital experiences that matter.</p>
+        </div>
+        
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-white transition-colors">
+            <i class="fab fa-twitter text-xl"></i>
+          </a>
+          <a href="#" class="hover:text-white transition-colors">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a href="#" class="hover:text-white transition-colors">
+            <i class="fab fa-linkedin text-xl"></i>
+          </a>
+          <a href="#" class="hover:text-white transition-colors">
+            <i class="fab fa-dribbble text-xl"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        <p>&copy; 2023 Alex Carter. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dark mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    
+    themeToggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
+    
+    // Check for saved theme preference
+    if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      html.classList.add('dark');
+    }
+    
+    // Mobile menu toggle would go here
+  </script>
+</body>
+</html>
